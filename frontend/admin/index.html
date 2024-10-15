@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><h2>Dashboard</h2></div>
+        <div class="logout"><a href="#" onclick="logout()">Logout</a></div>
+    </nav>
+    <div class="main">
+        <div class="side-nav">
+            <div>
+                <ul>
+                    <li id="homeLink"><span><i class="bi bi-house-door-fill"></i></span><a href="#">Home</a></li>
+                    <li id="addEventLink"><span><i class="bi bi-building-fill-add"></i></span><a href="#">Add Events</a></li>
+                    <li id="usersLink"><span><i class="bi bi-person-lines-fill"></i></span><a href="#">Users</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-dashboard" id="main-dashboard"></div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/index.js"></script>
+</html>

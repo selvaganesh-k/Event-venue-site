@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #DF3311;
+    padding: 0px 30px;
+}
+
+nav .logo h2 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+    margin: 10px;
+}
+
+nav .logout a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #DF3311;
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90.5vh;
+}
+
+.main .side-nav {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #221333;
+    overflow-y: scroll;
+    padding: 20px 0;
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.side-nav ul {
+    padding: 0;
+}
+
+.side-nav ul li {
+    list-style: none;
+    line-height: 50px;
+}
+
+.side-nav ul li span {
+    margin-right: 10px;
+
+    i {
+        color: #fff;
+    }
+}
+
+.side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main-dashboard {
+    width: 80%;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.form-container {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px);
+    /* Two columns with spacing */
+    text-align: left;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%;
+    /* Full width for textarea or large inputs */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.ticket-types {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #DF3311;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d65137;
+}
+
+input:focus {
+    outline: 2px solid#DF3311;
+}
+
+textarea:focus {
+    outline: 2px solid#DF3311;
+}
+
+.ticket-types input {
+    outline: none;
+}
+
+.image-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: 100px;
+    border-radius: 4px;
+}
+
+/* data table */
+
+.data-table {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.data-table h2 {
+    text-align: center;
+}
+
+.data-table table {
+    width: 96%;
+    margin: 2%;
+}
+
+.data-table table {
+    border-collapse: collapse;
+}
+
+.data-table table,
+tr,
+th,
+td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+}
+.data-table table tr th{
+    background-color: #DF3311;
+    color: #fff;
+}
+.edit-btn {
+    background-color: #0d8000;
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.edit-btn:hover {
+    background-color: #13b102;
+}
+
+.delete-btn {
+    background-color: #bf0303;
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.delete-btn:hover {
+    background-color: #ff0606;
+}
+
+.btn-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

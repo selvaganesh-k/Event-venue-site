@@ -1,0 +1,242 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-left a {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #DF3311;
+}
+
+.nav-center ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-center ul li a {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.nav-center ul li a:hover {
+  color: #DF3311;
+  transition: color 0.3s linear;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-right .nav-icons span {
+  margin-left: 10px;
+}
+
+.nav-right .nav-icons span i {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-right .nav-login {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right .nav-login span i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #DF3311;
+  cursor: pointer;
+}
+
+.nav-right .nav-login a {
+  text-align: center;
+  font-weight: 600;
+  color: #DF3311;
+}
+
+#myVideo {
+  z-index: -10;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+section {
+  padding: 20px 50px;
+}
+
+.main {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.main div h1 {
+  color: #fff;
+  font-size: 100px;
+  margin: 20px 0px;
+}
+
+.main div h2 {
+  font-weight: 100;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.main .Upcoming-btn {
+  margin-top: 50px;
+}
+
+.main div a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: lighter;
+  background-color: #DF3311;
+  border: 2px solid #DF3311;
+  border-radius: 50px;
+  padding: 12px 30px;
+}
+
+.main div a:hover {
+  border-color: #fff;
+
+}
+
+.Upcoming-shows {
+  background-color: #221333;
+  height: max-content;
+}
+
+.Upcoming-shows .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Upcoming-shows-head h1 {
+  text-align: center;
+  color: #DF3311;
+  font-size: 45px;
+}
+
+.Upcoming-shows-head p {
+  color: #fff;
+  text-align: center;
+}
+
+.Upcoming-shows-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 5px;
+  width: 30%;
+  height: 350px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform .3s linear;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 40%;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 40%;
+  padding: 5px;
+}
+
+.card-text a {
+  text-decoration: none;
+  color: #ff8a31;
+  text-align: left;
+}
+
+.card-text p {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.card .card-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 20%;
+}
+
+.card .card-footer p {
+  font-size: 13px;
+  font-weight: 500;
+
+}
+
+.card .card-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: lighter;
+  background-color: #DF3311;
+  border: 2px solid #DF3311;
+  border-radius: 50px;
+  padding: 12px 10px;
+}
