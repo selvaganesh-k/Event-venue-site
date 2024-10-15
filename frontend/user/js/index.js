@@ -1,21 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
     const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    const authLink = document.querySelector('#authLink');
+    const userIcon = document.querySelector('#userIcon');
+
     if (loggedInUser) {
         if (loggedInUser.isAdmin) {
             window.location.href = '../admin/index.html';
-        }
-        else{
-            let userIcon=document.querySelector('#userIcon');
-            userIcon.innerHTML=`${loggedInUser.name.charAt(0).toUpperCase()}`;
-            userIcon.style.color='white';
-            userIcon.style.padding ='5px 7px';
-            userIcon.style.backgroundColor ="#DF3311";
-            userIcon.style.border ='2px solid #DF3311';
+        } else {
+            userIcon.innerHTML = `${loggedInUser.name.charAt(0).toUpperCase()}`;
+            userIcon.style.color = 'white';
+            userIcon.style.padding = '5px 7px';
+            userIcon.style.backgroundColor = "#DF3311";
+            userIcon.style.border = '2px solid #DF3311';
             userIcon.style.borderRadius = '50%';
             userIcon.style.marginRight = "5px";
-        } 
+
+            authLink.textContent = 'Logout';
+            authLink.href = '#'
+            authLink.addEventListener('click', () => {
+                localStorage.removeItem('loggedInUser');
+                alert('Logged out successfully!');
+                window.location.href = '../auth.html';
+            });
+        }
     }
 });
+
 function checkValidUser(loggedInUser){
     if(loggedInUser){
         window.location.href='./booknow.html';
